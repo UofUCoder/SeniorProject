@@ -1,0 +1,117 @@
+\documentclass[letterpaper,10 pt,conference,onecolumn]{IEEEtran}
+
+% The following packages can be found on http:\\www.ctan.org
+\usepackage{graphicx} % for pdf, bitmapped graphics files
+\usepackage{epsfig} % for postscript graphics files
+\usepackage{mathptmx} % assumes new font selection scheme installed
+\usepackage{times} % assumes new font selection scheme installed
+%\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% added packages 
+%\usepackage {hyperref}
+\usepackage {subfig}
+\usepackage {subfloat}
+\usepackage {xspace}
+%% Math and symbol packages
+\usepackage{amssymb}
+\usepackage{amsmath}
+%%% for kmap tables:
+%\usepackage{hhline}
+\usepackage{multicol}
+%%% for \dashline
+%\usepackage{epic}
+\usepackage {enumerate}
+\usepackage{scalefnt}
+\usepackage{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{
+	colorlinks, urlcolor=darkblue
+}
+
+% for cool graphics
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows,shapes.symbols,shapes.callouts,snakes,shapes.geometric}
+
+\definecolor{darkblue}{cmyk}{1.0,0.7,0.0,0.2}
+\definecolor{lightcyan}{cmyk}{0.5,0.0,0.0,0.0}
+\definecolor{lightyellow}{cmyk}{0.0,0.0,0.5,0.0}
+\definecolor{darkred}{rgb}{0.5,0.0,0.0}
+\definecolor{lightblue}{rgb}{0.5,  0.5,  1.0}
+\definecolor{lightblue}{rgb}{0.5,  0.5,  1.0}
+\definecolor{darkgreen}{rgb}{0.0,  0.5,  0.0}
+\definecolor{lightgreen}{rgb}{0.5, 1.0, 0.5}
+\definecolor{deepred}{rgb}{0.8,0.00,0.00}
+
+
+% Enter particular words to define specific hyphenation allowed
+\hyphenation{}
+
+\graphicspath{ {images/} }
+
+% Process this with:
+% pdflatex latex-template.tex
+% bibtex latex-template.bib
+% pdflatex latex-template.tex
+% pdflatex latex-template.tex
+\begin{document}
+	
+	
+	
+	\title{
+		Parking Lot Metering Using Wireless Senor Modules and Cloud Processing
+	}
+
+	\author{
+		\IEEEauthorblockN{
+			Ben Figlin\IEEEauthorrefmark{1},
+			Brennan Myers\IEEEauthorrefmark{2} and  
+			Caelan Dailey\IEEEauthorrefmark{3}
+		}
+		\IEEEauthorblockA{
+			Dept. of Electrical and Computer Engineering,
+			University of Utah\\
+			Email: \IEEEauthorrefmark{1}benfiglin@gmail.com,
+			\IEEEauthorrefmark{2}brennan.myers@gmail.com,
+			\IEEEauthorrefmark{3}caelandailey@gmail.com\\
+			Website: \url{http://eng.utah.edu/~brennanm/website.html}
+		}
+	
+	}
+
+	\maketitle
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{abstract}
+	Driving a car to work or school is convenient when public transportation is either non-existent or consumes significantly more time. As more people use their cars, parking becomes a real issue and finding an available parking space can turn into a nightmare. We propose a solution to a significant portion of the problem by eliminating some of the unknowns and providing real-time insight into parking lot conditions, which will save both time and frustration. The solution will include a service through which users will be able to make instant decisions on when and where to park.
+	Tracking available parking stalls will be achieved by developing and deploying a system capable of determining the percentage of available space through a method of counting the flow of vehicles into and out of a parking lot. By using custom hardware and commonly used sensors, data will be captured and pushed to our cloud service. Vehicle traffic will be counted by remote modules at each entrance. Each remote module will have a battery and a solar panel to simplify installation where no power is available. The data will then be transmitted wirelessly (through low-frequency RF) to a base station which will collect the information and push it to the cloud over the internet. Advanced analysis within our cloud will take into account previous parking lot conditions and will predict how full a lot will be at any given time. A mobile application connected to the cloud will then use this data to provide a graphical representation of the parking lot. The resulting system will provide peace of mind to drivers by enabling easy access to real-time conditions, historical trends and useful predictions through a simple web interface or a mobile app.
+	Our team possesses a variety of skills that can be applied directly to this project. We are passionate about electrical and computer design, which has become second nature to us. This project will become a reality by applying our expertise in embedded systems, networking, and mobile app development. Using these skills, together with dedication and hard work, we will provide a smart solution that will simplify parking for all.
+	\end{abstract}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\section{Introduction}
+
+	\section{Background}
+	
+	\section{Proposed Work}
+
+	\section{Schedule}
+	
+	\section{Resources}
+	
+	\section{Summary}
+ 
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%\begin{multicols}{2}
+	\bibliographystyle{IEEEtran}
+	\bibliography{latex-template}
+	%\end{multicols}
+	
+	
+\end{document}
