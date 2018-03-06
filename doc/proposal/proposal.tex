@@ -93,8 +93,25 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\section{Introduction}
+Driving a car to work or school is convenient when public transportation is either non-existent or consumes significantly more time. As more people use their cars, parking becomes a real issue and finding an available parking space can turn into a nightmare. We propose a solution to a significant portion of the problem by eliminating some of the unknowns and providing real-time insight into parking lot conditions, which will save both time and frustration. The solution will include a service through which users will be able to make instant decisions on when and where to park.
+
+Tracking available parking stalls will be achieved by developing and deploying a system capable of determining the percentage of available space through a method of counting the flow of vehicles into and out of a parking lot. By using custom hardware and commonly used sensors, data will be captured and pushed to our cloud service. Vehicle traffic will be counted by remote modules at each entrance. Each remote module will have a battery and a solar panel to simplify installation where no power is available. The data will then be transmitted wirelessly (through low-frequency RF) to a base station which will collect the information and push it to a cloud service over the internet. Advanced analysis within our cloud will take into account previous parking lot conditions and will predict how full a lot will be at any given time. A mobile application connected to the cloud will then use this data to provide a graphical representation of the parking lot. The resulting system will provide peace of mind to drivers by enabling easy access to real-time conditions, historical trends and useful predictions through a simple web interface or a mobile app.
+
+Our team possesses a variety of skills that can be applied directly to this project. We are passionate about electrical and computer design, which has become second nature to us. This project will become a reality by applying our expertise in embedded systems, networking, and mobile app development. Using these skills, together with dedication and hard work, we will provide a smart solution that will simplify parking for all.
 
 	\section{Background}
+	Multiple approaches exist to the challenge of parking lot metering. Some solutions propose metering individual stalls, while others suggest counting differential traffic to and from a parking lot. While the former presents a very accurate solution, it involves high complexity and cost due to the need of sensor electronics at each individual stall and a way to communicate between them all. The latter is easy to integrate and requires very few sensors and supporting hardware, but is slightly less accurate and may require recalibration maintenance from time to time.
+	
+	Our project will be focusing on the differential approach for reasons of cost effectiveness and simplicity, making it a practical solution for mass implementation. With that approach, different sensing techniques exist, each with its advantages and disadvantages. We examined various existing products that are similar to our proposed solution and arranged them into three categories by their sensing technology:
+	
+	\subsection{Inductive Loop Solutions}
+	[todo]
+	
+	\subsection{Optical and Ultrasonic Solutions}
+	[todo]
+	
+	\subsection{Video Processing Solutions}
+	[todo]
 	
 	\section{Proposed Work}
 
