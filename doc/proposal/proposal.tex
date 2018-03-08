@@ -101,16 +101,34 @@
 		Our project will be focusing on the differential approach for reasons of cost effectiveness and simplicity, making it a practical solution for mass implementation. With that approach, different sensing techniques exist, each with its advantages and disadvantages. We examined various existing products that are similar to our proposed solution and arranged them into three categories by their sensing technology. Some of those products are mentioned below:
 		
 		\subsection{Inductive Loop Solutions}
-			T2Systems AutoCount - The system uses in-ground inductive loops at each entrance and exit for counting inbound and outbound traffic. The sensor units are self powered using solar panels. One disadvantage is the difficult installation which requires placing inductive loop wires into the road. Another disadvantage is the low accuracy of inductive loops which requires syncing the system very often \cite{autocount}.
+			\textbf{T2Systems AutoCount} - The system uses in-ground inductive loops at each entrance and exit for counting inbound and outbound traffic. The sensor units are self powered using solar panels. One disadvantage is the difficult installation which requires placing inductive loop wires into the road. Another disadvantage is the low accuracy of inductive loops which requires syncing the system very often \cite{autocount}.
 	
 		\subsection{Optical and Ultrasonic Solutions}
-			Signal-Tech RedStorm - The product incorporates two IR overhead sensors for each lane which detect overlap and are able to detect direction of movement while also ignoring smaller objects like pedestrians. Some of the disadvantages include: (1) Sensors can be mounted in an overhead configuration only and therefore are less suitable for places where no ceiling exists above the lanes, and (2) Modules must be wired to communication and power, which complicates installation where power is not available and increases the cost due to the needed extra infrastructure \cite{redstorm}.
+			\textbf{Signal-Tech RedStorm} - The product incorporates two IR overhead sensors for each lane which detect overlap and are able to detect direction of movement while also ignoring smaller objects like pedestrians. Some of the disadvantages include: (1) Sensors can be mounted in an overhead configuration only and therefore are less suitable for places where no ceiling exists above the lanes, and (2) Modules must be wired to communication and power, which complicates installation where power is not available and increases the cost due to the needed extra infrastructure \cite{redstorm}.
 		
 		\subsection{Video Processing Solutions}
-			Mirame TrueView Parking - This system uses a ceiling mounted camera to detect traffic on both the inbound and the outbound lane of a parking lot entrance/exit. Each camera does the signal processing and the counting on-board and communicates directly through the internet. This solution is somewhat more expensive due more complex electronics and can be only mounted in an overhead configuration \cite{trueview}.
+			\textbf{Mirame TrueView Parking} - This system uses a ceiling mounted camera to detect traffic on both the inbound and the outbound lane of a parking lot entrance/exit. Each camera does the signal processing and the counting on-board and communicates directly through the internet. This solution is somewhat more expensive due more complex electronics and can be only mounted in an overhead configuration \cite{trueview}.
 	
 	\section{Proposed Work}
+		\subsection{System Overview}
+			The proposed project will be based on a differential counting of the vehicles going into and out of a parking lot. Counting will be done by wireless sensor modules located at each entrance and exit point. Each module will consist of a sensor (or a pair of sensors), an RF transceiver, a small microprocessor board, a battery, and a solar panel. All modules will be communicating with a base unit which will be receiving raw data over RF and will be sending that data to the Internet-based backend server. Data will be processed and stored in the server, and will be accessed by user friendly apps or a web interface. Figure \ref{fig:overview} shows, at a high level, the different components of the system and how they interconnect.
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.65\columnwidth]{overview}
+				\caption{A high level block diagram of the proposed system}
+				\label{fig:overview}
+			\end{figure}
 		
+		\subsection{Vehicle Sensing}
+		
+		\subsection{Communication}
+		
+		\subsection{Power}
+		
+		\subsection{Backend Server}
+		
+		\subsection{User Interface}
 		
 	\section{Schedule}
 		
@@ -122,9 +140,9 @@
  		
 		
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{multicols}{2}
+	%\begin{multicols*}{2}
 	\bibliographystyle{IEEEtran}
 	\bibliography{references}
-	\end{multicols}
+	%\end{multicols*}
 	
 \end{document}
